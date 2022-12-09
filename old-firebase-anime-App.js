@@ -1,8 +1,9 @@
 import React from 'react';
-import Register from './src/screens/Register';
+import Login from './src/screens/Login';
+
 
 export default function App() {
   return (
-    <Register />
+    <Login />
   );
 }
