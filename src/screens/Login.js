@@ -33,7 +33,7 @@ export default function Login() {
          <StatusBar style="light" />
         <View style={{ 
             flexDirection: 'column',
-         }}>
+        }}>
             <Animated.View style={{
                 alignItems: 'center',
                 transform: [
@@ -41,12 +41,11 @@ export default function Login() {
                     {translateY: position.y}
                 ]
             }}>
-                 <Text style={{ 
+                <Text style={{ 
                     fontSize: 90,
                     color: 'white',
-                  }} >Login</Text>
+                }} >Login</Text>
             </Animated.View>
-           
         </View>
         <Animated.View style={{ 
             transform: [

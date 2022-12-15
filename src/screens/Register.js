@@ -20,11 +20,7 @@ export default function Register() {
 
             const currentUser = userCredentials.user;
 
-            const docUser = await addDoc(collection(db, "users"), {
-                userId: currentUser.uid,
-                name: name,
-                email: currentUser.email,
-              });
+            const docUser = await addDoc(  collection(db, "users") , {userId: currentUser.uid,name: name,email: currentUser.email} );
             
             console.log('Registered with:',currentUser);
             alert('Registered')

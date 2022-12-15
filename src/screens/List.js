@@ -12,18 +12,14 @@ export default function List() {
       let i = 1;
       let tabUsers = [];
       querySnapshot.forEach((doc) => {
-        // console.log(JSON.stringify(doc.data()));
         tabUsers.push({
           index: i,
           userId: doc.data().userId,
           name: doc.data().name,
           email: doc.data().email,
         });
-
         i = i + 1;
       });
-      console.log(JSON.stringify(tabUsers));
-
       setUsers(tabUsers);
     };
 
@@ -142,7 +138,7 @@ export default function List() {
                           color: "#4B5955",
                         }}
                       >
-                       {item.item.email}
+                       {item.item.email} {'\n'}
                        {item.item.userId}
                       </Text>
                     </View>
